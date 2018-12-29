@@ -1,16 +1,16 @@
 TravelWiit: 
 Smart Travel Guide will help you make smart decisions about your next vacation spot! :smiley:
 
-## Getting Started
+## Getting Started 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. This is why we created TravelWiit, a full stack web application which utilizes a RESTful API. TravelWiit offers an interactive platform for travellers and enthusiasts to search and learn about places they want to visit while connecting with one others. Users can sign up for an account and keep track of their favorite places, follow other users, and share their posts on social media.
 
 ### Setup Instructions
 Run the command: 
 ```
-npm run dev
-Check to see if node modules are all installed
-In browser, check localhost:3000, there is no need to run two different browsers
-Sign in using test user (to be completeded)
+1. npm run dev
+2. Check to see if node modules are all installed
+3. In browser, check localhost:3000, there is no need to run two different browsers
+4. Sign in using test user (to be completeded)
 ```
 ### Project Guidelines
 Create a Full Stack web application
