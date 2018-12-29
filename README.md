@@ -1,4 +1,4 @@
-TravelWiit: 
+# TravelWiit: 
 Smart Travel Guide will help you make smart decisions about your next vacation spot! :smiley:
 
 ## Getting Started 
