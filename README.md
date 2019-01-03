@@ -3,7 +3,7 @@ Smart Travel Guide will help you make smart decisions about your next vacation s
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. This is why we created TravelWiit, a full stack web application which utilizes a RESTful API. TravelWiit offers an interactive platform for travellers and enthusiasts to search and learn about places they want to visit while connecting with one others. Users can sign up for an account and keep track of their favorite places, follow other users, and share their posts on social media.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. This is why we created TravelWiit, a full stack web application which utilizes a RESTful API. TravelWiit offers an interactive platform for travellers and enthusiasts to search and learn about places they want to visit while connecting with others. Users can sign up for an account and keep track of their favorite places, follow other users, and share their posts on social media.
 
 ### Setup Instructions
 
