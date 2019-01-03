@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 Run the command: 
 ```
 1. npm run dev
-2. Check to see if node modules are all installed
+2. Check to see if node modules are installed
 3. In browser, check localhost:3000, there is no need to run two different browsers
 4. Sign in using test user (to be completeded)
 ```
