@@ -17,7 +17,7 @@ img {
 }
 
 .dark-overlay {
-  background-color: rgba(54, 50, 50, 0.185);
+  /* background-color: rgba(87, 80, 80, 0.308); */
   position: absolute;
   top: 0;
   left: 0;
@@ -35,5 +35,5 @@ img {
 }
 
 .form-control::placeholder {
-  color: #bbb !important;
+  color: rgb(209, 206, 206) !important;
 }
