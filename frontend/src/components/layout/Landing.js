@@ -13,7 +13,7 @@ class Landing extends Component {
                 TravelWiit
                 </h1>
                 <p className="lead">
-                  Where do you want to go today?</p>
+                  Find Where you want to go today?</p>
                 <hr />
                 <Link to="/register" class="btn btn-lg btn-info mr-2">
                   Sign Up
