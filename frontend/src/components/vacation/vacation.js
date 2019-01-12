@@ -2,17 +2,13 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { getCurrentProfile, deleteAccount } from '../../actions/profileActions';
+import { getCurrentProfile } from '../../actions/profileActions';
 import Spinner from '../common/Spinner';
-import ProfileActions from './ProfileActions';
+import ProfileActions from '../dashboard/ProfileActions';
 
-class Dashboard extends Component {
+class Vacation extends Component {
   componentDidMount() {
     this.props.getCurrentProfile();
-  }
-
-  onDeleteClick(e) {
-    this.props.deleteAccount();
   }
 
   render() {
@@ -28,15 +24,13 @@ class Dashboard extends Component {
       if (Object.keys(profile).length > 0) {
         dashboardContent = (
           <div>
-          <p className="lead text-muted">
-              Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
+            <p className="lead text-muted">Welcome <Link to={`/profile/${profile.handle}`}>{user.name}</Link>
             </p>
             <ProfileActions />
             {/*TODO: exp and edu */}
             <div style={{ marginBottom: '60px' }} />
-            <button onClick={this.onDeleteClick.bind(this)} className="btn btn-danger">Delete My Account
-            </button>
-          </div>
+            <button className="btn btn-danger">Delete My Account</button>
+            </div>
         );
       } else {
         // User is logged in but has no profile
@@ -57,7 +51,7 @@ class Dashboard extends Component {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <h1 className="display-4">Dashboard</h1>
+              <h1 className="display-4">Choose your vacation spot</h1>
               {dashboardContent}
             </div>
           </div>
@@ -67,9 +61,8 @@ class Dashboard extends Component {
   }
 }
 
-Dashboard.propTypes = {
+Vacation.propTypes = {
   getCurrentProfile: PropTypes.func.isRequired,
-  deleteAccount: PropTypes.func.isRequired,
   auth: PropTypes.object.isRequired,
   profile: PropTypes.object.isRequired
 };
@@ -79,4 +72,4 @@ const mapStateToProps = state => ({
   auth: state.auth
 });
 
-export default connect(mapStateToProps, { getCurrentProfile, deleteAccount })(Dashboard);
+export default connect(mapStateToProps, { getCurrentProfile })(Vacation);
