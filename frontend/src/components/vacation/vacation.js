@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { getCurrentProfile } from '../../actions/profileActions';
 import Spinner from '../common/Spinner';
 import ProfileActions from '../dashboard/ProfileActions';
+import santamonica from '../../img/santamonica.jpg';
 
 class Vacation extends Component {
   componentDidMount() {
@@ -36,7 +37,7 @@ class Vacation extends Component {
         // User is logged in but has no profile
         dashboardContent = (
           <div>
-            <p className="lead text-muted">Welcome {user.name}</p>
+            <p className="lead text-muted">Welcome {user.name}!!</p>
             <p>You have not yet setup a profile, please add some info</p>
             <Link to="/create-profile" className="btn btn-lg btn-info">
               Create Profile
@@ -52,6 +53,7 @@ class Vacation extends Component {
           <div className="row">
             <div className="col-md-12">
               <h1 className="display-4">Choose your vacation spot</h1>
+              <img src={santamonica}/>
               {dashboardContent}
             </div>
           </div>
